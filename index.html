@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driftnote: voice notes that write themselves</title>
+  <meta name="description" content="Driftnote turns voice memos into clean, searchable notes. Free plan, Pro from $6 a month.">
+  <style>
+    :root { --ink: #14161a; --dim: #5d636e; --line: #e6e8ec; --brand: #6d28d9; --soft: #f5f3ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); }
+    nav { max-width: 1040px; margin: 0 auto; padding: 18px 28px; display: flex; align-items: center; gap: 26px; }
+    nav strong { font-size: 21px; margin-right: auto; color: var(--brand); }
+    nav a { color: var(--dim); text-decoration: none; font-size: 15px; }
+    nav .cta { color: #fff; background: var(--brand); padding: 8px 16px; border-radius: 8px; }
+    main { max-width: 1040px; margin: 0 auto; padding: 0 28px 90px; }
+    .hero { text-align: center; padding: 64px 0 46px; }
+    .hero h1 { font-size: 54px; line-height: 1.08; letter-spacing: -0.025em; margin: 0 0 16px; }
+    .hero p { font-size: 21px; color: var(--dim); max-width: 640px; margin: 0 auto 26px; }
+    .btn { display: inline-block; background: var(--brand); color: #fff; text-decoration: none; padding: 13px 26px; border-radius: 10px; font-weight: 600; }
+    .note { display: block; margin-top: 12px; font-size: 14px; color: var(--dim); }
+    h2 { font-size: 32px; text-align: center; margin: 64px 0 26px; letter-spacing: -0.015em; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; }
+    .card h3 { margin: 0 0 6px; font-size: 19px; }
+    .card p { margin: 0; color: var(--dim); font-size: 16px; }
+    .price { font-size: 38px; font-weight: 700; margin: 6px 0 2px; }
+    .price span { font-size: 16px; color: var(--dim); font-weight: 400; }
+    .card ul { margin: 12px 0 0; padding-left: 20px; color: var(--dim); font-size: 15.5px; }
+    .pop { border: 2px solid var(--brand); background: var(--soft); }
+    .qa { border-bottom: 1px solid var(--line); padding: 14px 4px; max-width: 760px; margin: 0 auto; }
+    .qa h3 { font-size: 17px; margin: 0; }
+    .qa p { color: var(--dim); margin: 6px 0 0; }
+    footer { border-top: 1px solid var(--line); text-align: center; color: var(--dim); font-size: 14px; padding: 26px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>Driftnote</strong>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a class="cta" href="#pricing">Start free</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Voice notes that<br>write themselves.</h1>
+      <p>Talk for a minute, get a clean note: Driftnote transcribes your voice memos, fixes the ums, and adds a title and tags.</p>
+      <a class="btn" href="#pricing">Start free</a>
+      <span class="note">Free forever plan. No credit card.</span>
+    </section>
+
+    <h2 id="features">What it does</h2>
+    <div class="grid">
+      <div class="card"><h3>Transcribes in 40 languages</h3><p>Record on your phone or upload an audio file. Notes are ready in about ten seconds.</p></div>
+      <div class="card"><h3>Cleans up as it writes</h3><p>Filler words go, paragraphs and punctuation come in, and every note gets a title and tags.</p></div>
+      <div class="card"><h3>Search everything</h3><p>Find any note by a word you said. Export to Markdown, Notion or Google Docs.</p></div>
+    </div>
+
+    <h2 id="pricing">Pricing</h2>
+    <div class="grid">
+      <div class="card"><h3>Free</h3><div class="price">$0</div><ul><li>30 minutes of audio a month</li><li>Notes up to 3 minutes long</li><li>Markdown export</li></ul></div>
+      <div class="card pop"><h3>Pro</h3><div class="price">$6<span> / month</span></div><ul><li>Unlimited audio</li><li>Notes up to 2 hours long</li><li>Notion and Google Docs export</li><li>Speaker labels</li></ul></div>
+      <div class="card"><h3>Team</h3><div class="price">$12<span> / user / month</span></div><ul><li>Everything in Pro</li><li>Shared folders</li><li>Admin controls and SSO</li></ul></div>
+    </div>
+
+    <h2 id="faq">Questions</h2>
+    <div class="qa"><h3>Is there a free trial of Pro?</h3><p>Yes, 14 days, and you can cancel any time before it ends without paying anything.</p></div>
+    <div class="qa"><h3>Which apps does it work with?</h3><p>iPhone, Android, Mac and the web. Your notes sync across all of them.</p></div>
+    <div class="qa"><h3>Who can hear my recordings?</h3><p>Nobody. Audio is deleted after it is transcribed, and notes are encrypted at rest.</p></div>
+    <div class="qa"><h3>Can I get a refund?</h3><p>Yes. Annual plans can be refunded in full within 30 days.</p></div>
+  </main>
+
+  <footer>Driftnote is a demo product made up for a tutorial. &copy; 2026</footer>
+  <script async src="https://onetagai.com/widget.js" data-key="ot_demo000000000000000000000"
+    data-title="Ask Driftnote" data-greeting="Hi! Ask me about plans, pricing or privacy." data-color="#6d28d9"></script>
+</body>
+</html>
